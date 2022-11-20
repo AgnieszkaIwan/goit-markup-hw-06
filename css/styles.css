@@ -1,5 +1,22 @@
+root {
+  --graphite1: #212121;
+  --white: #ffffff;
+  --dark-grey: #757575;
+  --blue: #2196f3;
+  --light-grey1: #eeeeee;
+  --black: #000000;
+  --light-gray2: #f5f4fa;
+  --white-transp: #ffffff 60%;
+  --graphite2: #2f303a;
+  --light-gray3: #ececec;
+}
+
 body {
-  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  background-color: white;
+  color: #212121;
+  font-size: 14px;
+  letter-spacing: 0, 03em;
 }
 
 .background-white {
@@ -16,8 +33,6 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
-
   color: #2196f3;
 }
 .studio-black {
@@ -26,26 +41,24 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
   color: #000000;
 }
-.link-nav {
+.link {
   text-decoration: none;
 }
 
-.nav-menu {
+.list-nav {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   list-style: none;
   color: #212121;
 }
-.nav-menu .link-nav:visited {
+.list-nav .link:visited {
   color: #212121;
 }
-.nav-menu .link-nav:focus,
-.nav-menu .link-nav:hover {
+.list-nav .link:focus,
+.list-nav .link:hover {
   color: #2196f3;
 }
 
@@ -56,14 +69,13 @@ body {
 .contact1 {
   text-decoration: none;
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
 }
 .list .contact1:focus,
 .list .contact1:hover {
-  color: #000000;
+  color: #2196f3;
 }
 .list .contact1:visited {
   color: #757575;
@@ -84,6 +96,7 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
+  font-family: inherit;
   display: flex;
   align-items: center;
   text-align: center;
@@ -95,27 +108,35 @@ body {
   cursor: pointer;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .header2 {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
   color: #212121;
 }
 
 .header3 {
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   color: #212121;
 }
 
 .section-list-item {
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: #757575;
 }
 
@@ -134,7 +155,6 @@ body {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
   color: #212121;
 }
 
@@ -142,7 +162,6 @@ body {
   font-size: 16px;
   line-height: 1.88;
   text-align: center;
-  letter-spacing: 0.03em;
   color: #757575;
 }
 
@@ -182,7 +201,6 @@ body {
 .description {
   font-size: 16px;
   line-height: 1.875;
-  letter-spacing: 0.03em;
   color: #757575;
 }
 
@@ -191,16 +209,13 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
   color: #ffffff;
 }
 
 .location {
   font-family: 'Roboto';
   font-style: normal;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: #ffffff;
   text-decoration: none;
 }
@@ -208,19 +223,31 @@ body {
 .contacts2 {
   font-family: 'Roboto';
   font-style: normal;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   text-decoration-line: underline;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.list .contacts2:focus,
+.list .contacts2:hover {
+  color: #2196f3;
+}
+.list .contacts2:visited {
+  color: #757575;
 }
 
 .contacts3 {
   font-family: 'Roboto';
   font-style: normal;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
+}
+
+.list .contacts3:focus,
+.list .contacts3:hover {
+  color: #2196f3;
+}
+.list .contacts3:visited {
+  color: #757575;
 }
