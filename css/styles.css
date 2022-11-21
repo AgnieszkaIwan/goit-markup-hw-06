@@ -1,4 +1,4 @@
-root {
+:root {
   --graphite1: #212121;
   --white: #ffffff;
   --dark-grey: #757575;
@@ -13,18 +13,14 @@ root {
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: white;
-  color: #212121;
+  background-color: var(--white);
+  color: var(--graphite1);
   font-size: 14px;
-  letter-spacing: 0, 03em;
-}
-
-.background-white {
-  background: #ffffff;
+  letter-spacing: 0.03em;
 }
 
 .background-black {
-  background: #2f303a;
+  background-color: var(--graphite2);
 }
 
 .web {
@@ -33,7 +29,7 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  color: #2196f3;
+  color: var(--blue);
 }
 .studio-black {
   font-family: 'Raleway';
@@ -41,11 +37,16 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  color: #000000;
+  color: var(--black);
 }
 .link {
   text-decoration: none;
-  color: #212121;
+  color: var(--graphite1);
+}
+
+.link-current {
+  text-decoration: none;
+  color: var(--blue);
 }
 
 .list-nav {
@@ -53,14 +54,14 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   list-style: none;
-  color: #212121;
+  color: var(--graphite1);
 }
 .list-nav .link:visited {
-  color: #212121;
+  color: var(--graphite1) 1;
 }
 .list-nav .link:focus,
 .list-nav .link:hover {
-  color: #2196f3;
+  color: var(--blue);
 }
 
 .list {
@@ -72,14 +73,14 @@ body {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--dark-grey);
 }
 .list .contact1:focus,
 .list .contact1:hover {
-  color: #2196f3;
+  color: var(--blue);
 }
 .list .contact1:visited {
-  color: #757575;
+  color: var(--dark-grey);
 }
 
 .header1 {
@@ -90,7 +91,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  color: #ffffff;
+  color: var(--white);
 }
 
 .button-index {
@@ -102,8 +103,8 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
-  background: #2196f3;
+  color: var(--white);
+  background: var(--blue);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
@@ -127,26 +128,24 @@ body {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  color: #212121;
 }
 
 .header3 {
   font-weight: 700;
   line-height: 1.14;
-  color: #212121;
 }
 
 .section-list-item {
   line-height: 1.71;
-  color: #757575;
+  color: var(--dark-grey);
 }
 
 .background-gray {
-  background: #f5f4fa;
+  background: var(--light-gray2);
 }
 
 .team-member-item {
-  background: #ffffff;
+  background: var(--white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -156,14 +155,13 @@ body {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  color: #212121;
 }
 
 .team-job {
   font-size: 16px;
   line-height: 1.88;
   text-align: center;
-  color: #757575;
+  color: var(--dark-grey);
 }
 
 .button1 {
@@ -171,23 +169,25 @@ body {
   font-size: 16px;
   line-height: 1.625;
   color: #212121;
-  background-color: #f5f4fa;
+  background-color: var(--light-gray2);
   border: 4px;
-  border-color: #f5f4fa;
+  border-color: var(--light-gray2);
   border-radius: 4px;
   cursor: pointer;
+  letter-spacing: 0.03em;
+  font-family: inherit;
 }
 
 .button1:focus,
 .button1:hover {
-  color: #ffffff;
-  background-color: #2196f3;
+  color: var(--white);
+  background-color: var(--blue);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .projects {
-  background: #ffffff;
+  background: var(--white);
   border: 1px solid #eeeeee;
 }
 
@@ -195,14 +195,13 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  color: #212121;
   letter-spacing: 0.06em;
 }
 
 .description {
   font-size: 16px;
   line-height: 1.875;
-  color: #757575;
+  color: var(--dark-grey);
 }
 
 .studio-blue {
@@ -210,14 +209,14 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  color: #ffffff;
+  color: var(--white);
 }
 
 .location {
   font-family: 'Roboto';
   font-style: normal;
   line-height: 1.71;
-  color: #ffffff;
+  color: var(--white);
   text-decoration: none;
 }
 
@@ -231,10 +230,10 @@ body {
 
 .list .contacts2:focus,
 .list .contacts2:hover {
-  color: #2196f3;
+  color: var(--blue);
 }
 .list .contacts2:visited {
-  color: #757575;
+  color: var(--dark-grey);
 }
 
 .contacts3 {
@@ -247,8 +246,8 @@ body {
 
 .list .contacts3:focus,
 .list .contacts3:hover {
-  color: #2196f3;
+  color: var(--blue);
 }
 .list .contacts3:visited {
-  color: #757575;
+  color: var(--dark-grey);
 }
