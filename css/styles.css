@@ -19,6 +19,26 @@ body {
   letter-spacing: 0.03em;
 }
 
+.container {
+  width: 1200px;
+}
+
+.box {
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  align-items: baseline;
+  box-sizing: content-box;
+}
+
+.logo {
+  padding: 24px 0 25px 215px;
+  margin-right: 93px;
+  width: 145px;
+  height: 31;
+  justify-content: flex-start;
+}
+
 .background-black {
   background-color: var(--graphite2);
 }
@@ -55,6 +75,11 @@ body {
   letter-spacing: 0.02em;
   list-style: none;
   color: var(--graphite1);
+  display: flex;
+  width: 254px;
+  padding: 32px 0 32px 0px;
+  justify-content: space-between;
+  margin-left: 93px;
 }
 .list-nav .link:visited {
   color: var(--graphite1) 1;
