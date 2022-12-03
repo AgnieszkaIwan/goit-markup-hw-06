@@ -26,29 +26,37 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <!-- NAVIGATION -->
     <header>
-      <a class="link" href="./index.html"
-        ><span class="web">Web</span><span class="studio-black">Studio</span>
-      </a>
-      <nav>
-        <ul class="list-nav">
-          <li><a class="link" href="./index.html">Agencja</a></li>
-          <li>
-            <a class="link-current" href="./portfolio.html">Portfolio</a>
-          </li>
-          <li><a class="link" href="#">Kontakt</a></li>
-        </ul>
+      <nav class="site-nav">
+        <div class="container flex-container">
+          <div class="flex-nav">
+            <a class="link" href="./index.html">
+              <span class="web">Web</span><span class="studio-black">Studio</span>
+            </a>
+            <ul class="list-nav nav-links">
+              <li><a class="link-current" href="./index.html">Agencja</a></li>
+              <li>
+                <a class="link" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li><a class="link" href="#">Kontakt</a></li>
+            </ul>
+          </div>
+          <div>
+            <ul class="list contact-nav">
+              <li><a class="contact1" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+              <li><a class="contact1" href="tel:48111111111">+48 111 111 111</a></li>
+            </ul>
+          </div>
+        </div>
       </nav>
-      <ul class="list">
-        <li><a class="contact1" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a class="contact1" href="tel:48111111111">+48 111 111 111</a></li>
-      </ul>
     </header>
-    <main>
+    <!-- PORTFOLIO -->
+    <main class="container">
       <section>
+        <!-- CATEGORIES -->
         <h1 class="visually-hidden">Kategorie</h1>
-
-        <ul class="list">
+        <ul class="list categories-flex">
           <li>
             <button type="button" class="button-portfolio">Wszystkie</button>
           </li>
@@ -57,13 +65,14 @@
           <li><button type="button" class="button-portfolio">Dizajn</button></li>
           <li><button type="button" class="button-portfolio">Marketing</button></li>
         </ul>
-        <ul class="list">
+        <!-- PROJECTS -->
+        <ul class="project-list projects-flex">
           <h2 class="visually-hidden">Projekty</h2>
           <li class="projects">
             <img
               src="images/portfolio/img_technocrack.jpg"
               alt="Grafika przedstawiająca laptopa"
-              width="370"
+              width="365"
               height="294"
             />
             <h2 class="project-name">Technocrack</h2>
@@ -73,7 +82,7 @@
             <img
               src="images/portfolio/img_new_orlean.jpg"
               alt="Grafika przedstawiająca koszykarzy"
-              width="370"
+              width="365"
               height="294"
             />
             <h2 class="project-name">Grafika New Orlean vs Golden Star</h2>
@@ -83,7 +92,7 @@
             <img
               src="images/portfolio/img_restaurant.jpg"
               alt="Grafika przedstawiająca logo restauracji"
-              width="370"
+              width="365"
               height="294"
             />
             <h2 class="project-name">Restauracja Seafood</h2>
@@ -93,7 +102,7 @@
             <img
               src="images/portfolio/img_project_prime.jpg"
               alt="Grafika słuchawki"
-              width="370"
+              width="365"
               height="294"
             />
             <h2 class="project-name">Project Prime</h2>
@@ -103,7 +112,7 @@
             <img
               src="images/portfolio/img_project_boxes.jpg"
               alt="Grafika przedstawiająca pudełka"
-              width="370"
+              width="365"
               height="294"
             />
             <h2 class="project-name">Project Boxes</h2>
@@ -113,7 +122,7 @@
             <img
               src="images/portfolio/img_inspiration.jpg"
               alt="Grafika przedstawiająca monitor"
-              width="370"
+              width="365"
               height="294"
             />
             <h2 class="project-name">Inspiration has no Borders</h2>
@@ -123,7 +132,7 @@
             <img
               src="images/portfolio/img_magazine.jpg"
               alt="Grafika przedstawiająca magazyn"
-              width="370"
+              width="365"
               height="294"
             />
             <h2 class="project-name">Magazyn Limited Edition</h2>
@@ -133,7 +142,7 @@
             <img
               src="images/portfolio/img_project_lab.jpg"
               alt="Grafika przedstawiająca etykietę"
-              width="370"
+              width="365"
               height="294"
             />
             <h2 class="project-name">Projekt LAB</h2>
@@ -143,7 +152,7 @@
             <img
               src="images/portfolio/img_growing.jpg"
               alt="Grafika przedstawiająca komputer"
-              width="370"
+              width="365"
               height="294"
             />
             <h2 class="project-name">Growing Business</h2>
@@ -153,24 +162,27 @@
       </section>
     </main>
   </body>
-  <footer class="background-black">
-    <a class="link" href="index.html"
-      ><span class="web">Web</span><span class="studio-blue">Studio</span>
-    </a>
-    <address>
-      <ul class="list">
-        <li>
-          <a
-            class="location"
-            href="https://goo.gl/maps/ceexrpEdUmLHmBQN8"
-            target="blank"
-            rel="noopener nofollow"
-            >m. Warszawa, Aleje Jerozolimskie 21
-          </a>
-        </li>
-        <li><a class="contacts3" href="mailto:info@example.com">info@example.com</a></li>
-        <li><a class="contacts3" href="tel:48111111111">+48 111 111 111</a></li>
-      </ul>
-    </address>
+  <!-- FOOTER -->
+  <footer class="container background-black">
+    <div class="footer-flex">
+      <a class="link" href="index.html"
+        ><span class="web">Web</span><span class="studio-blue">Studio</span>
+      </a>
+      <address>
+        <ul class="list">
+          <li>
+            <a
+              class="location"
+              href="https://goo.gl/maps/ceexrpEdUmLHmBQN8"
+              target="blank"
+              rel="noopener nofollow"
+              >m. Warszawa, Aleje Jerozolimskie 21
+            </a>
+          </li>
+          <li><a class="contacts2" href="mailto:info@example.com">info@example.com</a></li>
+          <li><a class="contacts2" href="tel:48111111111">+48 111 111 111</a></li>
+        </ul>
+      </address>
+    </div>
   </footer>
 </html>
