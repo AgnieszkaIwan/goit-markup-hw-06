@@ -101,6 +101,7 @@ body {
 
 .list {
   list-style: none;
+  padding: 0;
 }
 
 .contact1 {
@@ -192,30 +193,35 @@ body {
   width: 1170px;
   height: 101;
   margin-top: 94px;
-  justify-content: center;
+  justify-content: space-between;
   align-items: stretch;
   gap: 30px;
-  margin-bottom: 94px;
+  margin-bottom: 88px;
 }
 
 .content-section3 {
   display: flex;
   width: 1170px;
-  margin-top: 94px;
-  margin-bottom: 94px;
-  justify-content: space-between;
+  margin: 94px 0px 94px 0px;
+  padding: 0 0 0 30px;
+  justify-content: space-around;
   gap: 30px;
 }
 
 .background-gray {
   background: var(--light-gray2);
-  width: 1600px;
-  height: 648px;
+  max-width: 1200px;
   padding-top: 94px;
 }
 
 .content-section4 {
   display: flex;
+  width: 1170px;
+  justify-content: space-around;
+  gap: 30px;
+  align-items: center;
+  margin: 50px 0 0 0;
+  padding: 0 0 94px 30px;
 }
 
 .team-member-item {
@@ -236,6 +242,16 @@ body {
   line-height: 1.88;
   text-align: center;
   color: var(--dark-grey);
+}
+
+.footer-flex {
+  display: flex;
+  flex-direction: column;
+  height: 252px;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px 0 60px 20px;
+  margin: 0;
 }
 
 .button-portfolio {
