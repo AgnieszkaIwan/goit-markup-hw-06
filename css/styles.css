@@ -118,7 +118,7 @@ body {
   color: var(--dark-grey);
 }
 
-.motto-box {
+.content-section1 {
   max-width: 1600px;
   height: 600px;
   display: flex;
@@ -169,10 +169,10 @@ body {
   overflow: hidden;
 }
 .header2 {
+  text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-  text-align: center;
 }
 
 .header3 {
@@ -184,10 +184,38 @@ body {
 .section-list-item {
   line-height: 1.71;
   color: var(--dark-grey);
+  text-align: left;
+}
+
+.content-section2 {
+  display: flex;
+  width: 1170px;
+  height: 101;
+  margin-top: 94px;
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
+  margin-bottom: 94px;
+}
+
+.content-section3 {
+  display: flex;
+  width: 1170px;
+  margin-top: 94px;
+  margin-bottom: 94px;
+  justify-content: space-between;
+  gap: 30px;
 }
 
 .background-gray {
   background: var(--light-gray2);
+  width: 1600px;
+  height: 648px;
+  padding-top: 94px;
+}
+
+.content-section4 {
+  display: flex;
 }
 
 .team-member-item {
