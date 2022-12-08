@@ -103,21 +103,11 @@ section {
   color: var(--blue);
 }
 .studio-black {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
   color: var(--black);
 }
 .link {
   text-decoration: none;
   color: var(--graphite1);
-}
-
-.link-current {
-  text-decoration: none;
-  color: var(--blue);
 }
 
 .list-nav {
@@ -135,6 +125,11 @@ section {
   text-decoration: none;
   padding: 32px 0;
   display: block;
+}
+
+.link-current {
+  text-decoration: none;
+  color: var(--blue);
 }
 
 .list-nav .link-nav:visited {
@@ -186,7 +181,7 @@ section {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white);
-  width: 696 px;
+  width: 696px;
   margin: 0 auto;
   margin-bottom: 30px;
 }
@@ -206,6 +201,7 @@ section {
   min-width: 200px;
   border: none;
   padding: 10px 41px;
+  margin: 0 auto;
 }
 
 .visually-hidden {
@@ -221,14 +217,28 @@ section {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.content-section {
+  padding-top: 0;
+}
+
 .header2 {
   text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
+  margin-bottom: 50px;
+}
+.header3 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  padding-top: 94px;
+  margin-bottom: 50px;
 }
 
-.header3 {
+.header4 {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
@@ -248,17 +258,13 @@ section {
 
 .content-section3 {
   display: flex;
-  width: 1170px;
-  margin: 94px 0px 94px 0px;
-  padding: 0 0 0 30px;
-  justify-content: space-around;
   gap: 30px;
+  margin-bottom: 94px;
 }
 
 .background-gray {
   background: var(--light-gray2);
   max-width: 1200px;
-  padding-top: 94px;
 }
 
 .content-section4 {
@@ -289,6 +295,9 @@ section {
   line-height: 1.88;
   text-align: center;
   color: var(--dark-grey);
+}
+.background-footer {
+  background-color: var(--graphite2);
 }
 
 .footer-flex {
@@ -374,6 +383,10 @@ section {
   font-size: 26px;
   line-height: 1.19;
   color: var(--white);
+}
+
+.footer-list-item:first-child {
+  margin-top: 20px;
 }
 
 .location {
