@@ -48,6 +48,7 @@ a {
 
 address {
   font-style: normal;
+  margin-top: 20px;
 }
 
 button {
@@ -142,8 +143,7 @@ section {
 
 .contact-nav {
   display: flex;
-  align-items: flex-end;
-  margin-left: 371px;
+  margin-left: auto;
   gap: 50px;
 }
 
@@ -234,7 +234,6 @@ section {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-  padding-top: 94px;
   margin-bottom: 50px;
 }
 
@@ -259,22 +258,15 @@ section {
 .content-section3 {
   display: flex;
   gap: 30px;
-  margin-bottom: 94px;
 }
 
 .background-gray {
   background: var(--light-gray2);
-  max-width: 1200px;
 }
 
 .content-section4 {
   display: flex;
-  width: 1170px;
-  justify-content: space-around;
   gap: 30px;
-  align-items: center;
-  margin: 50px 0 0 0;
-  padding: 0 0 94px 30px;
 }
 
 .team-member-item {
@@ -283,10 +275,17 @@ section {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+
+.team-member2 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .team-member {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  margin-bottom: 10px;
   text-align: center;
 }
 
@@ -296,28 +295,13 @@ section {
   text-align: center;
   color: var(--dark-grey);
 }
-.background-footer {
-  background-color: var(--graphite2);
-}
-
-.footer-flex {
-  display: flex;
-  flex-direction: column;
-  height: 252px;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 60px 0 60px 20px;
-  margin: 0;
-}
 
 /* PORTFOLIO */
 
 .categories-flex {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
-  margin-top: 94px;
-  margin-bottom: 35px;
+  margin-bottom: 50px;
   gap: 8px;
 }
 .button-portfolio {
@@ -332,6 +316,7 @@ section {
   cursor: pointer;
   letter-spacing: 0.03em;
   font-family: inherit;
+  padding: 6px 25px;
 }
 
 .button-portfolio:focus,
@@ -348,16 +333,10 @@ section {
 .projects-flex {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding: 0;
-  margin: 0;
-  margin-bottom: 104px;
+  gap: 30px;
 }
 .projects {
-  background: var(--white);
   border: 1px solid #eeeeee;
-  margin: 15px 15px 15px 15px;
 }
 
 .projects-grid {
@@ -377,6 +356,16 @@ section {
   color: var(--dark-grey);
 }
 
+/* FOOTER */
+
+.background-footer {
+  background-color: var(--graphite2);
+  padding: 60px 0;
+}
+
+.footer-flex {
+}
+
 .studio-blue {
   font-family: 'Raleway';
   font-weight: 700;
@@ -385,8 +374,8 @@ section {
   color: var(--white);
 }
 
-.footer-list-item:first-child {
-  margin-top: 20px;
+.footer-list-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .location {
