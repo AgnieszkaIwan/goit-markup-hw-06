@@ -9,6 +9,7 @@
   --white-transp: #ffffff 60%;
   --graphite2: #2f303a;
   --light-gray3: #ececec;
+  --graphite2-transp: #2f303a66;
 }
 
 body {
@@ -94,9 +95,11 @@ section {
 }
 
 .background-black {
-  background-color: var(--graphite2);
   padding: 200px 0;
   text-align: center;
+  background-image: linear-gradient(var(--graphite2-transp), var(--graphite2-transp)),
+    url(../images/main/ovelay-img.jpg);
+  background-size: cover;
 }
 
 .web {
