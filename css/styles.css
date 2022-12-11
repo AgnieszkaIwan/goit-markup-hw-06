@@ -122,7 +122,6 @@ section {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--graphite1);
   text-decoration: none;
   padding: 32px 0;
   display: block;
@@ -133,9 +132,6 @@ section {
   color: var(--blue);
 }
 
-.list-nav .link-nav:visited {
-  color: var(--graphite1) 1;
-}
 .list-nav .link-nav:focus,
 .list-nav .link-nav:hover {
   color: var(--blue);
@@ -335,8 +331,10 @@ section {
   flex-wrap: wrap;
   gap: 30px;
 }
-.projects {
+.project {
+  padding: 20px 24px;
   border: 1px solid #eeeeee;
+  border-top: 0;
 }
 
 .projects-grid {
@@ -348,6 +346,7 @@ section {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
 }
 
 .description {
