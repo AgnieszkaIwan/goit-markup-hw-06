@@ -62,6 +62,10 @@ section {
   padding-bottom: 94px;
 }
 
+/* svg:hover {
+  color: var(--blue);
+} */
+
 .container {
   width: 1200px;
   margin: 0 auto;
