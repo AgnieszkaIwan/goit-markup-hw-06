@@ -225,6 +225,12 @@ section {
   padding-top: 0;
 }
 
+.icon-box {
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+}
+
 .header2 {
   text-align: center;
   font-weight: 700;
@@ -297,6 +303,23 @@ section {
   line-height: 1.88;
   text-align: center;
   color: var(--dark-grey);
+}
+
+.social-icons {
+  padding: 0 32px;
+}
+.social-media {
+  display: inline-flex;
+  gap: 10px;
+  padding-top: 16px;
+  padding-bottom: 30px;
+  fill: var(--light-gray2);
+  justify-content: center;
+}
+
+.social-media:hover {
+  fill: var(--blue);
+  cursor: pointer;
 }
 
 /* PORTFOLIO */
