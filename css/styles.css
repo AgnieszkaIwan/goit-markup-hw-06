@@ -277,6 +277,20 @@ section {
   gap: 30px;
 }
 
+.clients {
+  margin-top: 94px;
+}
+
+.client-icons {
+  display: inline;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  fill: #afb1b8;
+}
+
 .background-gray {
   background: var(--light-gray2);
 }
