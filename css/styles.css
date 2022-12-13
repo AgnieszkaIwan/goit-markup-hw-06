@@ -63,10 +63,6 @@ section {
   padding-bottom: 94px;
 }
 
-/* svg:hover {
-  color: var(--blue);
-} */
-
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -85,10 +81,6 @@ section {
   fill: var(--dark-grey);
 }
 
-.contact-icons:hover {
-  fill: var(--blue);
-}
-
 .flex-container {
   display: flex;
   align-items: center;
@@ -100,6 +92,12 @@ section {
 .flex-nav {
   display: flex;
   align-items: center;
+}
+
+.contact-item .contact-icons:hover {
+  color: var(--blue);
+  fill: var(--blue);
+  cursor: pointer;
 }
 
 .background-black {
@@ -277,13 +275,7 @@ section {
   gap: 30px;
 }
 
-.clients {
-  margin-top: 94px;
-}
-
-.client-icons {
-  display: inline;
-
+.clients-icon {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   width: 170px;
@@ -297,7 +289,17 @@ section {
 
 .content-section4 {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 94px 215;
   gap: 30px;
+}
+
+.content-section4 .clients-icon:hover {
+  fill: var(--blue);
+  cursor: pointer;
+  border: 1px solid var(--blue);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .team-member-item {
@@ -389,10 +391,17 @@ section {
   flex-wrap: wrap;
   gap: 30px;
 }
+
 .project {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: 0;
+}
+
+.project-box:hover {
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
 }
 
 .projects-grid {
@@ -420,7 +429,9 @@ section {
   padding: 60px 0;
 }
 
-.footer-flex {
+.footer-items {
+  display: flex;
+  gap: 70px;
 }
 
 .studio-blue {
@@ -465,4 +476,38 @@ section {
 }
 .list .contacts3:visited {
   color: var(--dark-grey);
+}
+
+.join-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.join-us {
+  color: var(--white);
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.join-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.join-media {
+  display: inline-flex;
+  padding-top: 16px;
+  padding-bottom: 30px;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  fill: var(--white);
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.join-media:hover {
+  background-color: var(--blue);
 }

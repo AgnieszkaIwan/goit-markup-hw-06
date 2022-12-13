@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>hw2-portfolio</title>
+    <title>Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -38,8 +38,16 @@
         </ul>
       </nav>
       <ul class="list contact-nav">
-        <li><a class="contact1" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a class="contact1" href="tel:48111111111">+48 111 111 111</a></li>
+        <li class="contact-item">
+          <svg class="contact-icons" width="16px" height="12px">
+            <use href="images/icons.svg#icon-envelope"></use>
+            </svg>
+          <a class="contact1" href="mailto:info@devstudio.com">info@devstudio.com</a></svg>
+        </li>
+        <li class="contact-item">  <svg class="contact-icons" width="16px" height="12px">
+          <use href="images/icons.svg#icon-smartphone"></use>
+          </svg>
+          <a class="contact1" href="tel:48111111111">+48 111 111 111</a></li>
       </ul>
     </div>
   </header>
@@ -61,7 +69,7 @@
         <!-- PROJECTS -->
           <h2 class="visually-hidden">Projekty</h2>
           <ul class="project-list projects-flex">
-          <li>
+          <li class="project-box">
             <img
               src="images/portfolio/img_technocrack.jpg"
               alt="Grafika przedstawiająca laptopa"
@@ -73,7 +81,7 @@
             <p class="description">Strona internetowa</p>
             </div>
           </li>
-          <li>
+          <li class="project-box">
             <img
               src="images/portfolio/img_new_orlean.jpg"
               alt="Grafika przedstawiająca koszykarzy"
@@ -85,7 +93,7 @@
             <p class="description">Grafika</p>
             </div>
           </li>
-          <li>
+          <li class="project-box">
             <img
               src="images/portfolio/img_restaurant.jpg"
               alt="Grafika przedstawiająca logo restauracji"
@@ -97,7 +105,7 @@
             <p class="description">Strona internetowa</p>
             </div>
           </li>
-          <li>
+          <li class="project-box">
             <img
               src="images/portfolio/img_project_prime.jpg"
               alt="Grafika słuchawki"
@@ -109,7 +117,7 @@
             <p class="description">Marketing</p>
             </div>
           </li>
-          <li>
+          <li class="project-box">
             <img
               src="images/portfolio/img_project_boxes.jpg"
               alt="Grafika przedstawiająca pudełka"
@@ -121,7 +129,7 @@
             <p class="description">Aplikacja</p>
             </div>
           </li>
-          <li>
+          <li class="project-box">
             <img
               src="images/portfolio/img_inspiration.jpg"
               alt="Grafika przedstawiająca monitor"
@@ -133,7 +141,7 @@
             <p class="description">Strona Internetowa</p>
             </div>
           </li>
-          <li>
+          <li class="project-box">
             <img
               src="images/portfolio/img_magazine.jpg"
               alt="Grafika przedstawiająca magazyn"
@@ -145,7 +153,7 @@
             <p class="description">Dizajn</p>
             </div>
           </li>
-          <li>
+          <li class="project-box">
             <img
               src="images/portfolio/img_project_lab.jpg"
               alt="Grafika przedstawiająca etykietę"
@@ -157,7 +165,7 @@
             <p class="description">Marketing</p>
             </div>
           </li>
-          <li>
+          <li class="project-box">
             <img
               src="images/portfolio/img_growing.jpg"
               alt="Grafika przedstawiająca komputer"
@@ -176,8 +184,9 @@
   </body>
   <!-- FOOTER -->
   <footer class="background-footer">
-    <div class="container footer-flex">
-      <a class="web" href="./index.html"> Web<span class="studio-blue">Studio</span> </a>
+    <div class="container">
+      <ul class="footer-items">
+     <li> <a class="web" href="./index.html"> Web<span class="studio-blue">Studio</span> </a>
       <address>
         <ul class="footer-list">
           <li class="footer-list-item">
@@ -197,6 +206,33 @@
           </li>
         </ul>
       </address>
+     </li>
+     <li class="join-section">
+      <p class="join-us">DOŁĄCZ DO NAS</p>
+        <p class="join-icons">
+          <a class="join-media" href="https://www.instagram.com/">
+          <svg width="20px" height="20px">
+            <use href="images/icons.svg#icon-instagram2"></use>
+          </svg>
+          </a>
+          <a class="join-media" href="https://www.twitter.com/">
+          <svg width="20px" height="20px">
+            <use href="images/icons.svg#icon-twitter1"></use>
+          </svg>
+          </a>
+          <a class="join-media" href="https://www.facebook.com/">
+          <svg width="20px" height="20px">
+            <use href="images/icons.svg#icon-facebook-1"></use>
+          </svg>
+          </a>
+          <a class="join-media" href="https://www.linkedin.com/">
+          <svg width="20px" height="20px">
+              <use href="images/icons.svg#icon-linkedin-1"></use>
+          </svg>
+          </a> 
+        </p>
+        </li>
+        </ul>
     </div>
   </footer>
 </html>
