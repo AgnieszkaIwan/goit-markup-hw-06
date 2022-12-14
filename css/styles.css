@@ -45,6 +45,7 @@ ol {
 
 a {
   text-decoration: none;
+  display: flex;
 }
 
 address {
@@ -78,7 +79,8 @@ section {
 /* NAVIGATION*/
 
 .contact-icons {
-  fill: var(--dark-grey);
+  fill: currentColor;
+  margin-right: 10px;
 }
 
 .flex-container {
@@ -94,18 +96,16 @@ section {
   align-items: center;
 }
 
-.contact-item .contact-icons:hover {
-  color: var(--blue);
-  fill: var(--blue);
-  cursor: pointer;
-}
-
 .background-black {
   padding: 200px 0;
   text-align: center;
   background-image: linear-gradient(var(--graphite2-transp), var(--graphite2-transp)),
     url(../images/main/ovelay-img.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
 }
 
 .web {
@@ -232,9 +232,12 @@ section {
 }
 
 .icon-box {
-  padding: 25px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 30px;
   background-color: #f5f4fa;
+  border-radius: 4px;
 }
 
 .header2 {
@@ -281,6 +284,9 @@ section {
   width: 170px;
   height: 92px;
   fill: #afb1b8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .background-gray {
@@ -289,9 +295,6 @@ section {
 
 .content-section4 {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 94px 215;
   gap: 30px;
 }
 
@@ -331,25 +334,29 @@ section {
 
 .social-icons {
   padding: 0 32px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 16px;
 }
 .social-media {
-  display: inline-flex;
-  gap: 10px;
-  padding-top: 16px;
-  padding-bottom: 30px;
+  display: flex;
   justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
-  fill: #afb1b8;
   border-radius: 50%;
-  background-color: var(--white);
+  color: #afb1b8;
+}
+
+.social-media2 {
+  fill: currentColor;
 }
 
 .social-media:hover,
 .social-media:focus {
-  fill: var(--white);
+  color: var(--white);
   background-color: var(--blue);
-  cursor: pointer;
 }
 
 /* PORTFOLIO */
@@ -494,20 +501,22 @@ section {
 .join-icons {
   display: flex;
   gap: 10px;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
 }
 
 .join-media {
-  display: inline-flex;
-  padding-top: 16px;
-  padding-bottom: 30px;
+  display: flex;
   justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
-  fill: var(--white);
   border-radius: 50%;
+  color: var(--white);
   background-color: rgba(255, 255, 255, 0.1);
 }
 
 .join-media:hover {
-  background-color: var(--blue);
+  background-color: #2196f3;
 }
