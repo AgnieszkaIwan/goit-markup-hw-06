@@ -45,7 +45,6 @@ ol {
 
 a {
   text-decoration: none;
-  display: flex;
 }
 
 address {
@@ -238,7 +237,7 @@ section {
   margin-bottom: 30px;
   background-color: #f5f4fa;
   border-radius: 4px;
-  padding: 25px 100px;
+  height: 120px;
 }
 
 .header2 {
@@ -280,10 +279,11 @@ section {
 }
 
 .clients-icon {
-  border: 1px solid #afb1b8;
+  border: 1px solid currentColor;
   border-radius: 4px;
   width: 170px;
   height: 92px;
+  color: #afb1b8;
   fill: #afb1b8;
   display: flex;
   align-items: center;
@@ -301,7 +301,6 @@ section {
 
 .content-section4 .clients-icon:hover {
   fill: var(--blue);
-  cursor: pointer;
   border: 1px solid var(--blue);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -409,7 +408,6 @@ section {
 .project-box:hover {
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06),
     0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-  cursor: pointer;
 }
 
 .projects-grid {
@@ -440,6 +438,7 @@ section {
 .footer-items {
   display: flex;
   gap: 70px;
+  align-items: baseline;
 }
 
 .studio-blue {
@@ -478,17 +477,21 @@ section {
   text-decoration: none;
 }
 
-.list .contacts3:focus,
-.list .contacts3:hover {
+.contacts2:focus,
+.contacts2:hover {
   color: var(--blue);
 }
-.list .contacts3:visited {
+
+.location:focus,
+.location:hover {
+  color: var(--blue);
+}
+
+.contacts2:visited {
   color: var(--dark-grey);
 }
 
 .join-section {
-  display: flex;
-  flex-direction: column;
   gap: 20px;
 }
 
@@ -497,6 +500,7 @@ section {
   font-weight: 700;
   line-height: 16px;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .join-icons {
