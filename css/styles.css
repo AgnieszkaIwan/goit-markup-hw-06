@@ -144,6 +144,17 @@ section {
   color: var(--blue);
 }
 
+.link-current::after {
+  display: block;
+  content: '';
+  height: 4px;
+  width: 100%;
+  background-color: var(--blue);
+  border-radius: 2px;
+  position: relative;
+  top: 31px;
+}
+
 .list-nav .link-nav:focus,
 .list-nav .link-nav:hover {
   color: var(--blue);
@@ -161,7 +172,9 @@ section {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--dark-grey);
+  display: flex;
 }
+
 .list .contact1:focus,
 .list .contact1:hover {
   color: var(--blue);
@@ -171,6 +184,43 @@ section {
 }
 
 /* INDEX-MAIN */
+
+.backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.is-hidden {
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  min-height: 581px;
+  width: 528px;
+  background: var(--white);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background-color: var(--white);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+}
 
 .content-section1 {
   display: flex;
@@ -240,6 +290,28 @@ section {
   height: 120px;
 }
 
+.offer-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.offer-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 370px;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+  font-weight: 700;
+  line-height: 16px;
+  text-align: center;
+  justify-content: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white);
+  padding: 27px;
+}
+
 .header2 {
   text-align: center;
   font-weight: 700;
@@ -284,7 +356,6 @@ section {
   width: 170px;
   height: 92px;
   color: #afb1b8;
-  fill: #afb1b8;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -301,7 +372,7 @@ section {
 
 .content-section4 .clients-icon:hover {
   fill: var(--blue);
-  border: 1px solid var(--blue);
+
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -399,13 +470,19 @@ section {
   gap: 30px;
 }
 
+.project-link {
+  color: inherit;
+  display: block;
+}
+
 .project {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: 0;
 }
 
-.project-box:hover {
+.project-box:hover,
+.project-box:focus {
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06),
     0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
@@ -522,6 +599,7 @@ section {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.join-media:hover {
+.join-media:hover,
+.join-media:focus {
   background-color: #2196f3;
 }
