@@ -28,7 +28,7 @@
   </head>
   <body>
     <!-- NAVIGATION -->
-    <header class="site-nav">
+    <header>
       <div class="container flex-container">
         <nav class="flex-nav">
           <a class="web" href="./index.html"> Web<span class="studio-black">Studio</span> </a>
@@ -133,25 +133,21 @@
             <li>
               <div class="offer-box">
                 <img src="images/main/main_img1.jpg" alt="Zdjęcie box 1" width="370" height="294" />
-                <div class="offer-overlay">
-                  <span>APLIKACJE KOMPUTEROWE</span>
-                </div>
+
+                <p class="offer-overlay">APLIKACJE KOMPUTEROWE</p>
               </div>
             </li>
             <li>
               <div class="offer-box">
                 <img src="images/main/main_img2.jpg" alt="Zdjęcie box 2" width="370" height="294" />
-                <div class="offer-overlay">
-                  <span>APLIKACJE MOBILNE</span>
-                </div>
+
+                <p class="offer-overlay">APLIKACJE MOBILNE</p>
               </div>
             </li>
             <li>
               <div class="offer-box">
                 <img src="images/main/main_img3.jpg" alt="Zdjęcie box 3" width="370" height="294" />
-                <div class="offer-overlay">
-                  <span>ROZWIĄZANIA GRAFICZNE</span>
-                </div>
+                <p class="offer-overlay">ROZWIĄZANIA GRAFICZNE</p>
               </div>
             </li>
           </ul>
@@ -446,7 +442,11 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="close-btn" data-modal-close>X</button>
+        <button type="button" data-modal-close>
+          <svg class="close-btn" width="18" height="18">
+            <use href="images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
       </div>
     </div>
     <script src="./js/modal.js"></script>
