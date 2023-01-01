@@ -460,32 +460,37 @@
         </button>
         <form>
         <div class="modal-container">
-          <p>Zostaw swoje dane w formularzu poniżej</p>
+          <p class="modal-text">Zostaw swoje dane w formularzu poniżej</p>
           
             <div class="form-item">
               <label class="contact-form-items"> Imię</label>
               <div class="contact-form">
+              <input type="text" name="Imię" class="contact-fields" />
               <svg class="contact-form-icons">
                 <use href="images/icons.svg#icon-person-black"></use>
               </svg>
-              <input type="text" name="Imię" class="contact-fields" /></div>
+              </div>
             </div>
 
             <div class="form-item">
               <label class="contact-form-items"> Email</label>
+              <div class="contact-form">
+              <input type="email" name="email" class="contact-fields" />
               <svg class="contact-form-icons">
                 <use href="images/icons.svg#icon-email-black"></use>
               </svg>
-              <input type="email" name="email" class="contact-fields" />
             </div>
+              </div>
 
             <div class="form-item">
               <label class="contact-form-items"> Telefon</label>
+              <div class="contact-form">
+              <input type="tel" name="phone" class="contact-fields" />
               <svg class="contact-form-icons">
                 <use href="images/icons.svg#icon-phone-black"></use>
               </svg>
-              <input type="tel" name="phone" class="contact-fields" />
             </div>
+             </div>
             <div class="form-item">
               <label class="contact-form-items"> Komentarz</label>
               <textarea
@@ -496,13 +501,12 @@
               ></textarea>
             </div>
 
-            <div>
               <label class="check option statements-flex">
                 <input class="check__input" type="checkbox">
-                <span class="check__box statement-text">Oświadczam iż akceptuję <a class="politics" href="#">Regulamin</a> i
-                  <a class="politics" href="#">Politykę Prywatności.</span>
+                <span class="check__box statement-text">Oświadczam iż akceptuję <span class="politics">Regulamin</span> i
+                  <span class="politics">Politykę Prywatności.</span></span>
               </label>
-            </div>
+
             <button type="submit" class="button-submit button-index">Wyślij</button>
           </form>
         </div>
