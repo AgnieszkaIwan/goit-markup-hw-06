@@ -309,8 +309,8 @@ section {
 .check__input {
   position: relative;
   clip: rect(0 0 0 0);
-  width: 16px;
-  height: 15px;
+  width: 18px;
+  height: 20px;
   top: 27px;
   left: 0px;
   margin: -1px;
